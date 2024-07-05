@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e5e5e5"
+        android:padding="16dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <ImageView
+            android:id="@+id/signup_image"
+            android:layout_width="123dp"
+            android:layout_height="123dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38dp"
+            android:src="@drawable/undraw_undraw_undraw_undraw_sign_up_ln1s__1__s4bc__1__ee41__1__kf4d" />
+
+        <TextView
+            android:id="@+id/create_account_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signup_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.42"
+            android:text="Create account"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/first_name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:gravity="center_vertical"
+            android:lineSpacingMultiplier="1.42"
+            android:text="First name"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/first_name_input"
+            android:layout_width="310dp"
+            android:layout_height="38dp"
+            android:layout_alignBottom="@id/first_name_label"
+            android:layout_marginStart="-67dp"
+            android:layout_marginBottom="236dp"
+            android:layout_toEndOf="@id/first_name_label"
+            android:background="@drawable/rounded_corner" />
+
+        <TextView
+            android:id="@+id/last_name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_below="@id/first_name_input"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:lineSpacingMultiplier="1.42"
+            android:text="Last name"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/last_name_input"
+            android:layout_width="310dp"
+            android:layout_height="38dp"
+            android:layout_below="@id/last_name_label"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_corner" />
+
+        <TextView
+            android:id="@+id/email_label"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_below="@id/last_name_input"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:lineSpacingMultiplier="1.42"
+            android:text="Email"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/email_input"
+            android:layout_width="310dp"
+            android:layout_height="38dp"
+            android:layout_below="@id/email_label"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_corner" />
+
+        <TextView
+            android:id="@+id/telephone_label"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_below="@id/email_input"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:lineSpacingMultiplier="1.42"
+            android:text="Telephone"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/telephone_input"
+            android:layout_width="310dp"
+            android:layout_height="38dp"
+            android:layout_below="@id/telephone_label"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_corner" />
+
+        <TextView
+            android:id="@+id/password_label"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_below="@id/telephone_input"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:lineSpacingMultiplier="1.42"
+            android:text="Password"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/password_input"
+            android:layout_width="310dp"
+            android:layout_height="38dp"
+            android:layout_below="@id/password_label"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_corner" />
+
+        <TextView
+            android:id="@+id/confirm_password_label"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_below="@id/password_input"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:lineSpacingMultiplier="1.42"
+            android:text="Confirm your password"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/confirm_password_input"
+            android:layout_width="310dp"
+            android:layout_height="38dp"
+            android:layout_below="@id/confirm_password_label"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_corner" />
+
+        <Button
+            android:id="@+id/signup_button"
+            android:layout_width="294dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="726dp"
+            android:alpha="0.67"
+            android:backgroundTint="#2484f4"
+            android:text="Sign up"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/already_have_account_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signup_button"
+            android:layout_marginTop="137dp"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.42"
+            android:text="Already have an account?"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/login_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/already_have_account_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.42"
+            android:text="Login"
+            android:textColor="#007aff"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

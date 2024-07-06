@@ -1,205 +1,152 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="407dp"
+        android:layout_height="732dp"
         android:background="#e5e5e5"
-        android:padding="16dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="1dp">
-
-        <ImageView
-            android:id="@+id/signup_image"
-            android:layout_width="123dp"
-            android:layout_height="123dp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="38dp"
-            android:src="@drawable/undraw_undraw_undraw_undraw_sign_up_ln1s__1__s4bc__1__ee41__1__kf4d" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
         <TextView
-            android:id="@+id/create_account_text"
-            android:layout_width="wrap_content"
+            android:id="@+id/textViewCreateAccount"
+            android:layout_width="335dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/signup_image"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="25dp"
-            android:gravity="center"
-            android:lineSpacingMultiplier="1.42"
-            android:text="Create account"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="53dp"
+            android:text="Tạo tài khoản"
+            android:textAlignment="center"
             android:textColor="#000000"
-            android:textSize="15sp" />
-
-
-        <TextView
-            android:id="@+id/first_name_label"
-            android:layout_width="wrap_content"
-            android:layout_height="38dp"
-            android:gravity="center_vertical"
-            android:lineSpacingMultiplier="1.42"
-            android:text="First name"
-            android:textColor="#000000"
-            android:textSize="15sp" />
+            android:textSize="15sp"
+            android:layout_marginStart="42dp"
+            android:layout_marginEnd="42dp"/>
 
         <EditText
-            android:id="@+id/first_name_input"
+            android:id="@+id/editTextFirstName"
             android:layout_width="310dp"
-            android:layout_height="38dp"
-            android:layout_alignBottom="@id/first_name_label"
-            android:layout_marginStart="-67dp"
-            android:layout_marginBottom="236dp"
-            android:layout_toEndOf="@id/first_name_label"
-            android:background="@drawable/rounded_corner" />
-
-        <TextView
-            android:id="@+id/last_name_label"
-            android:layout_width="wrap_content"
-            android:layout_height="38dp"
-            android:layout_below="@id/first_name_input"
-            android:layout_marginStart="23dp"
-            android:layout_marginTop="15dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/textViewCreateAccount"
+            android:layout_marginTop="68dp"
+            android:background="@drawable/rounded_corners"
             android:gravity="center_vertical"
-            android:lineSpacingMultiplier="1.42"
-            android:text="Last name"
-            android:textColor="#000000"
-            android:textSize="15sp" />
+            android:layout_marginEnd="42dp"
+            android:layout_marginStart="42dp"
+            android:hint="Tên"
+            android:padding="8dp" />
 
         <EditText
-            android:id="@+id/last_name_input"
+            android:id="@+id/editTextLastName"
             android:layout_width="310dp"
-            android:layout_height="38dp"
-            android:layout_below="@id/last_name_label"
-            android:layout_marginStart="23dp"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/rounded_corner" />
-
-        <TextView
-            android:id="@+id/email_label"
-            android:layout_width="wrap_content"
-            android:layout_height="38dp"
-            android:layout_below="@id/last_name_input"
-            android:layout_marginStart="23dp"
-            android:layout_marginTop="15dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/editTextFirstName"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/rounded_corners"
             android:gravity="center_vertical"
-            android:lineSpacingMultiplier="1.42"
-            android:text="Email"
-            android:textColor="#000000"
-            android:textSize="15sp" />
+            android:hint="Họ"
+            android:padding="8dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginEnd="42dp"/>
 
         <EditText
-            android:id="@+id/email_input"
+            android:id="@+id/editTextEmail"
             android:layout_width="310dp"
-            android:layout_height="38dp"
-            android:layout_below="@id/email_label"
-            android:layout_marginStart="23dp"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/rounded_corner" />
-
-        <TextView
-            android:id="@+id/telephone_label"
-            android:layout_width="wrap_content"
-            android:layout_height="38dp"
-            android:layout_below="@id/email_input"
-            android:layout_marginStart="23dp"
-            android:layout_marginTop="15dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/editTextLastName"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/rounded_corners"
             android:gravity="center_vertical"
-            android:lineSpacingMultiplier="1.42"
-            android:text="Telephone"
-            android:textColor="#000000"
-            android:textSize="15sp" />
+            android:hint="Email"
+            android:padding="8dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginEnd="42dp"/>
 
         <EditText
-            android:id="@+id/telephone_input"
+            android:id="@+id/editTextPhone"
             android:layout_width="310dp"
-            android:layout_height="38dp"
-            android:layout_below="@id/telephone_label"
-            android:layout_marginStart="23dp"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/rounded_corner" />
-
-        <TextView
-            android:id="@+id/password_label"
-            android:layout_width="wrap_content"
-            android:layout_height="38dp"
-            android:layout_below="@id/telephone_input"
-            android:layout_marginStart="23dp"
-            android:layout_marginTop="15dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/editTextEmail"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/rounded_corners"
             android:gravity="center_vertical"
-            android:lineSpacingMultiplier="1.42"
-            android:text="Password"
-            android:textColor="#000000"
-            android:textSize="15sp" />
+            android:hint="Số điện thoại"
+            android:padding="8dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginEnd="42dp"/>
 
         <EditText
-            android:id="@+id/password_input"
+            android:id="@+id/editTextPassword"
             android:layout_width="310dp"
-            android:layout_height="38dp"
-            android:layout_below="@id/password_label"
-            android:layout_marginStart="23dp"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/rounded_corner" />
-
-        <TextView
-            android:id="@+id/confirm_password_label"
-            android:layout_width="wrap_content"
-            android:layout_height="38dp"
-            android:layout_below="@id/password_input"
-            android:layout_marginStart="23dp"
-            android:layout_marginTop="15dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/editTextPhone"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/rounded_corners"
             android:gravity="center_vertical"
-            android:lineSpacingMultiplier="1.42"
-            android:text="Confirm your password"
-            android:textColor="#000000"
-            android:textSize="15sp" />
+            android:hint="Mật khẩu"
+            android:padding="8dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginEnd="42dp"/>
 
         <EditText
-            android:id="@+id/confirm_password_input"
+            android:id="@+id/editTextConfirmPassword"
             android:layout_width="310dp"
-            android:layout_height="38dp"
-            android:layout_below="@id/confirm_password_label"
-            android:layout_marginStart="23dp"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/rounded_corner" />
+            android:layout_height="48dp"
+            android:layout_below="@+id/editTextPassword"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/rounded_corners"
+            android:gravity="center_vertical"
+            android:hint="Xác nhận mật khẩu"
+            android:padding="8dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginEnd="42dp"/>
+
 
         <Button
-            android:id="@+id/signup_button"
-            android:layout_width="294dp"
-            android:layout_height="32dp"
-            android:layout_marginTop="726dp"
-            android:alpha="0.67"
-            android:backgroundTint="#2484f4"
-            android:text="Sign up"
+            android:id="@+id/btnRegister"
+            android:layout_width="344dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextConfirmPassword"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="128dp"
+            android:layout_marginEnd="42dp"
+            android:background="@drawable/rounded_button"
+            android:gravity="center"
+            android:text="Đăng ký"
             android:textColor="#000000" />
 
         <TextView
-            android:id="@+id/already_have_account_text"
-            android:layout_width="wrap_content"
+            android:id="@+id/tvQuestion"
+            android:layout_width="261dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/signup_button"
-            android:layout_marginTop="137dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="42dp"
+            android:layout_marginBottom="41dp"
             android:gravity="center"
-            android:lineSpacingMultiplier="1.42"
-            android:text="Already have an account?"
+            android:text="Bạn có sẵn sàng để tạo một tài khoản?"
             android:textColor="#000000"
             android:textSize="15sp" />
 
         <TextView
-            android:id="@+id/login_text"
+            android:id="@+id/tvLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/already_have_account_text"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="39dp"
+            android:layout_marginBottom="41dp"
             android:gravity="center"
-            android:lineSpacingMultiplier="1.42"
-            android:text="Login"
-            android:textColor="#007aff"
+            android:text="Đăng nhập"
+            android:textColor="#6c63ff"
             android:textSize="15sp" />
-    </RelativeLayout>
 
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
